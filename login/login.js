@@ -1,4 +1,4 @@
-let login = document.getElementById('login')
+let login = document.getElementById('login-form')
 login.addEventListener("submit", (e) => {
     e.preventDefault()
 
@@ -8,7 +8,7 @@ login.addEventListener("submit", (e) => {
     let pw = document.getElementById("password");
 
     let check = users.map(index => index.email == email.value.trim() && index.pw == pw.value.trim())
-
+    console.log(check);
     if (check[0] == true){
         window.location.href = "../logout.html"
     } else {
