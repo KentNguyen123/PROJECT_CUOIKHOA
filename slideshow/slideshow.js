@@ -1,7 +1,7 @@
 var imgFeature = document.querySelector(".img-feature")
-var imgFeature = document.querySelectorAll(".list-image img")
-var prevBtn = document.querySelector("prev")
-var nextBtn = document.querySelector("next")
+var prevBtn = document.querySelector(".prev")
+var nextBtn = document.querySelector(".next")
+var listImg = document.querySelectorAll(".list-image img")
 
 var currentIndex = 0;
 function updateImageByIndex(index) {
@@ -21,16 +21,13 @@ listImg.forEach((imgElement, index) =>{
     })
 })
 
-prevBtn.addEventListener('click', e=> {
-
-})
-
 prevBtn.addEventListener('click', e=>{
     if(currentIndex == 0){
         currentIndex = listImg.length - 1
     } else{
         currentIndex--
     }
+    updateImageByIndex(currentIndex)
 })
 
 nextBtn.addEventListener('click', e=>{
@@ -40,6 +37,5 @@ nextBtn.addEventListener('click', e=>{
     } else{
         currentIndex++
     }
+    updateImageByIndex(currentIndex)
 })
-
-updateImageByIndex(0)
