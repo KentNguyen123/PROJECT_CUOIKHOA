@@ -1,8 +1,8 @@
 let products = {
     data: [{
-            name: "Combo 1 lon NAN OPTIPRO PLUS 4 850g và NAN OPTIPRO PLUS 4 1500g",
+            name: "Sữa bột Bellamy's Organic",
             price: "1.100.000đ",
-            image: "image/pd1.png"
+            image: "image/pd12.jpg"
         },
 
         {
@@ -38,13 +38,13 @@ let products = {
         {
             name: "Áo thun cho trẻ em ",
             price: "150.000đ",
-            image: "image/pd7,jpg"
+            image: "image/pd7.jpg"
         },
 
         {
             name: "Áo thun cho trẻ em",
             price: "150.000đ",
-            image: "pd8.jpg"
+            image: "image/pd8.jpg"
         },
 
         {
